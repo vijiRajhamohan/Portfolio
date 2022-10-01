@@ -33,7 +33,7 @@ function Project() {
             <p className="card-text">Created shoping website using React Hooks,UseReducer and UseContext </p>
             <p className="card-text"></p>
           <p className="card-text"><small className="text-muted" >Using React Hooks</small></p>
-          <a href="#" className="btn btn-primary" target={"_blank"} style={{marginTop:"15%"}}>Demo</a>
+            <a href="https://shoppingcartcontext.netlify.app/" className="btn btn-primary" target={"_blank"} style={{marginTop:"15%"}}>Demo</a>
         </div>
         </div>
       </div> 
