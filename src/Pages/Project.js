@@ -23,7 +23,7 @@ function Project() {
           <p className="card-text">Petty Shop is local E-Commerce Website that fetches the required
             items in given time,using MERN stack</p>
           <p className="card-text"><small className="text-muted">Admin Module</small></p>
-          <a href="https://pettishop.netlify.app/admin" className="btn btn-primary" target={"_blank"}>Demo</a>
+          <a href="https://pettishop.netlify.app/" className="btn btn-primary" target={"_blank"}>Demo</a>
         </div>
       </div>
       <div className="card mb-3" style={{ width: 350, height: "auto",justifyContent:"center"}}>
