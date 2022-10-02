@@ -12,7 +12,7 @@ function About({themeToggler}) {
           src="./image/about-img.png"
           height="380"
           width={360}
-          style={{ marginLeft: "8%", marginTop: "10%" }}
+          style={{ marginLeft: "13%", marginTop: "10%" }}
         />
       </div>
       <div
