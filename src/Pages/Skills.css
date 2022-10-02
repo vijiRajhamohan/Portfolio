@@ -13,24 +13,25 @@
 
 .inner {
     /* background-color: black; */
-    padding-top: 30px;
-    margin: 70px;
+   
+   
 }
 
 .header {
     text-align: center;
-    padding: 3px;
+   
     position: relative;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background: linear-gradient(to right, rgb(203, 6, 141), rgb(237, 99, 14));
+    /* background: linear-gradient(to right, rgb(203, 6, 141), rgb(237, 99, 14));
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent; */
         font-family: "Crimson Text", sans-serif;
 }
 .header > h3 :hover {
     transform: scale(2.5);
     font-family: "Alata", sans-serif;
     cursor: pointer;
+    margin-top: -1px;
 }
 
 .header:after {
@@ -43,6 +44,7 @@
     width: 100px;
     border-radius: 2px;
 }
+
 
 .content {
     display: grid;

@@ -1,22 +1,23 @@
 import React from "react";
 import "./Skills.css";
-
-function Skills() {
+import Nav from "../Components/Nav";
+function Skills({ themeToggler }) {
   return (
+    <div>
+      <Nav themeToggler={themeToggler} />
     <div className="inner" >
-      <div className="header" style={{marginTop:"-5%"}}>
-        <h1>
-          <b>My skills</b>
-        </h1>
+        <br />
+      <div >
+          <h3 style={{ textAlign: "center", fontWeight: "bold" ,}}>
+         My skills
+        </h3>
       </div>
+      <br/ >
       <div
-          className="card"
+        
           style={{
-            backgroundColor:"black",
-            // width:"180px",
-            // height: "auto",
-            // marginLeft: "15%",
-            borderRadius:"30px"
+           
+            borderRadius:"30px",marginLeft:"15%",marginRight:"15%"
           }}
         >
       <div className="content" style={{marginTop:"5%"}}>
@@ -220,6 +221,7 @@ function Skills() {
 
       </div>
         </div>
+    </div>
     </div>
   );
 }

@@ -1,7 +1,10 @@
 import React from "react";
+import Nav from "../Components/Nav";
 
-function About() {
+function About({themeToggler}) {
   return (
+    <div>
+      <Nav themeToggler={themeToggler} />
     <div><h3 style={{textAlign:"center",marginTop:"2%",fontWeight:"bold"}}>About Me</h3>
     <div className="row">
       <div className="col">
@@ -16,7 +19,7 @@ function About() {
         className="col"
         style={{ paddingRight: "5%", marginTop: "10%" }}
       >
-        <h3 style={{ color: "darkred" }}>
+            <h3 style={{ color: "rgb(203, 6, 141)" }}>
           I'm <b>Viji Rajhamohan</b> ,
           <div>
             completed my M.Sc{" "}
@@ -36,6 +39,7 @@ function About() {
               programming-languages, platforms, and enterprise applications.</div></b></i>
         </p>
       </div>
+    </div>
     </div>
     </div>
   );

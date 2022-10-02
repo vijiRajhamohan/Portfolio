@@ -1,8 +1,8 @@
 import { useRef, useState } from "react";
 import emailjs from "emailjs-com";
-
 import "./Contact.css";
-const Contact = () => {
+import Nav from "../Components/Nav";
+const Contact = ({ themeToggler }) => {
   const formRef = useRef();
   const [done, setDone] = useState(false);
 
@@ -27,6 +27,8 @@ const Contact = () => {
   };
 
   return (
+    <div>
+      <Nav themeToggler={themeToggler} />
     <div className="c">
       <div className="c-wrapper">
         <div className="c-left">
@@ -50,7 +52,7 @@ const Contact = () => {
         </div>
         <div className="c-right">
           <h3 className="c-desc">
-            <b> Get in touch</b>
+            <b> Get In Touch</b>
           </h3>
 
           <form ref={formRef} onSubmit={handleSubmit}>
@@ -68,6 +70,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
+      </div>
   );
 };
 

@@ -1,8 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
-function Project() {
+import Nav from "../Components/Nav";
+function Project({ themeToggler }) {
   return (
+    <div>
+      <Nav themeToggler={themeToggler} />
     <div><h3 style={{ textAlign: "center", marginTop: "2%", fontWeight: "bold" }}>My Projects</h3>
    <div className='p' style={{display:"flex",justifyContent:"space-around",marginTop:"5%"}}>
       
@@ -38,6 +40,7 @@ function Project() {
         </div>
       </div> 
     </div>
+  </div>  
   )
 }
 

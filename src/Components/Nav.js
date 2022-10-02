@@ -1,13 +1,15 @@
-import React from "react";
+import React,{useState} from "react";
 import { Link } from "react-router-dom";
 import "./Nav.css";
+import { BsSunFill } from "react-icons/bs";
+import { MdOutlineDarkMode } from "react-icons/md";
 
-function Nav() {
+function Nav({ themeToggler }) {
+  const [show, setShow] = useState(false)
   return (
     <div>
-      <div className="row" style={{backgroundColor:"black"}}>
-       
-        <nav className="navbar navbar-expand-lg navbar-dark  ">
+      <div className="row" >
+       <nav className="navbar navbar-expand-lg navbar-dark  ">
           <div className="container">
             <div className="logo col-sm-6 col-md-5 col-lg-6 " style={{ marginLeft: "2%" }}>
               <Link
@@ -44,6 +46,16 @@ function Nav() {
                     textDecoration: "none",
                   }}
                 >
+                  <li className="nav-item">
+                    {show ? (
+                      <button className="btn border-0" onClick={() => themeToggler()}>
+                        <BsSunFill />
+                      </button>
+                    ) : (
+                      <button className='btn border-0' onClick={() => themeToggler()}>
+                        <MdOutlineDarkMode />
+                      </button>)}
+                  </li>
                   <li className="nav-item">
                     <Link to="/home" style={{ textDecoration: "none" }}>
                       Home

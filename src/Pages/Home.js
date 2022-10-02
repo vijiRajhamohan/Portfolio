@@ -1,29 +1,41 @@
-
 import React from "react";
+import Nav from "../Components/Nav";
 
-function Home() {
+function Home({ themeToggler }) {
   return (
-    <div className="container text-center" style={{ backgroundColor: "white" }}>
-      <div className="row">
-        <div className="col-sm-6 col-md-5 " style={{ marginTop: "15%" }}>
-          <h3 style={{ color: "darkred" }}>
-            Hi ,I am <b>Viji Rajhamohan</b>
-          </h3>
-          <p>
-            <i>
-              <b>Full Stack Developer</b>
-            </i>
-          </p>
-          <a href="./image/Resume.pdf" target={"_blank"}>
-            <button className="btn btn-success">Resume</button>
-          </a>
-        </div>
+    <div>
+      <Nav themeToggler={themeToggler} />
+      <div className="container text-center" style={{
+        backgroundImage: 'url("./image/header_banner.jpg")',height:"450px",width:"75%",marginTop:"3%"
+              
+}}>
+        <div className="row">
+          <div className="col-sm-6 col-md-5 " style={{ marginTop: "18%" }}>
+            <h3 style={{ color: "white" }}>
+              Hi ,I am <b>Viji Rajhamohan</b>
+            </h3>
+            <p>
+              <i>
+                <b style={{ color: "white" }}>Full Stack Developer</b>
+              </i>
+            </p>
+            <a href="./image/Resume.pdf" target={"_blank"}>
+              <button className="btn btn-success">Resume</button>
+            </a>
+          </div>
 
-        <div
-          className="h col-sm-2 col-md-6 p-5 mt-2"
-          style={{ marginRight: "5%" }}
-        >
-          <img src="./image/46207-programmer-1.gif" height={400} width={550} />
+          <div
+            className="col-sm-2 col-md-6 p-5 mt-2"
+           
+          >
+            {/* <img
+              className="pic"
+              src="./image/46207-programmer-1.gif"
+              height={400}
+              width={450}
+             
+            /> */}
+          </div>
         </div>
       </div>
     </div>
