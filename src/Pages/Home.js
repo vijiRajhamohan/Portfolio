@@ -6,7 +6,7 @@ function Home({ themeToggler }) {
     <div>
       <Nav themeToggler={themeToggler} />
       <div className="container text-center" style={{
-        backgroundImage: 'url("./image/header_banner.jpg")',height:"450px",width:"75%",marginTop:"3%"
+        backgroundImage: 'url("./image/header_banner.jpg")',height:"460px",width:"75%",marginTop:"3%",overflow:"hidden"
               
 }}>
         <div className="row">
