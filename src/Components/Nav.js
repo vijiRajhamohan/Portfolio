@@ -32,7 +32,7 @@ function Nav({ themeToggler }) {
             >
               <span className="navbar-toggler-icon"></span>
             </button>
-            <div className="col-sm-6 navbar-expand-lg">
+            <div className="col-md-6 navbar-expand-lg">
               <div
                 className="collapse navbar-collapse  "
                 id="navbarSupportedContent"
