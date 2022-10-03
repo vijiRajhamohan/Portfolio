@@ -36,7 +36,7 @@ function Home({ themeToggler }) {
               className="pic"
               src="./image/46207-programmer-1.gif"
               height={400}
-              width={450}
+              width={350}
             />
           </div>
         </div>

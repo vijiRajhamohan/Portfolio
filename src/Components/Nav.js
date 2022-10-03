@@ -1,17 +1,18 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Nav.css";
-import { BsSunFill } from "react-icons/bs";
-import { MdOutlineDarkMode } from "react-icons/md";
 
 function Nav({ themeToggler }) {
-  const [show, setShow] = useState(false)
+  const [show, setShow] = useState(false);
   return (
     <div>
-      <div className="row" >
-       <nav className="navbar navbar-expand-lg navbar-dark  ">
+      <div className="row">
+        <nav className="navbar navbar-expand-lg navbar-dark  ">
           <div className="container">
-            <div className="logo col-sm-6 col-md-5 col-lg-6 " style={{ marginLeft: "2%" }}>
+            <div
+              className="logo col-sm-2 col-md-6 col-lg-6 "
+              style={{ marginLeft: "1%" }}
+            >
               <Link
                 to="/home"
                 style={{ textDecoration: "none", fontSize: "28px" }}
@@ -32,7 +33,7 @@ function Nav({ themeToggler }) {
             >
               <span className="navbar-toggler-icon"></span>
             </button>
-            <div className="col-md-6 navbar-expand-lg">
+            <div className="col-sm-2 col-md-6 navbar-expand-lg">
               <div
                 className="collapse navbar-collapse  "
                 id="navbarSupportedContent"
@@ -46,16 +47,23 @@ function Nav({ themeToggler }) {
                     textDecoration: "none",
                   }}
                 >
-                  <li className="nav-item">
+                  <div className="t">
                     {show ? (
-                      <button className="btn border-0" onClick={() => themeToggler()}>
-                        <BsSunFill />
-                      </button>
+                      <img
+                        src="./image/moon.png"
+                        alt=""
+                        className="t-icon"
+                        onClick={() => themeToggler()}
+                      />
                     ) : (
-                      <button className='btn border-0' onClick={() => themeToggler()}>
-                        <MdOutlineDarkMode />
-                      </button>)}
-                  </li>
+                      <img
+                        src="./image/sun.png"
+                        alt=""
+                        className="t-icon"
+                        onClick={() => themeToggler()}
+                      />
+                    )}
+                  </div>
                   <li className="nav-item">
                     <Link to="/home" style={{ textDecoration: "none" }}>
                       Home
